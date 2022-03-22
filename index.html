@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanged Man</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <script src="./hangedman.js"></script>
+    <audio src="https://vgmsite.com/soundtracks/super-mario-sunshine-game-rip/ompnaebeiv/21.%20Secret%20Course.mp3"
+        id="audio" loop="loop"></audio>
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <pre id="SplashStr" class="fade-in"></pre>
+        <button id="startBut" class="fade-in"><span>Start the Game</span></button>
+    </div>
+    <!-- Buttons div container -->
+    <div id="buttonDiv">
+        <button id="muteBut" class="MR"><span>&#x1F50A;</span></button>
+        <button id="playAgain" class="MR"><span>Restart game &#8635;</span></button>
+    </div>
+    <!-- Game Body div container -->
+    <div id="parent" dis>
+        <div id="first">
+            <p id="RG"></p>
+            <p>The word is:</p>
+            <p id="hidden"></p>
+            <p id="question">What is your guess?</p>
+            <p id="yourGuess"></p>
+            <input id="inP" type="text">
+        </div>
+        <div id="second">
+            <div id="wrongGuesses"></div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
