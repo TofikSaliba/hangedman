@@ -1,6 +1,9 @@
+body {
+    user-select: none;
+}
 
 /* ----- Splash screen ----- */
-#splash{
+#splash {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,8 +16,8 @@
 }
 
 /* ----- Start button ----- */
-#startBut{
-    font-size : 3em;
+#startBut {
+    font-size: 3em;
     top: 3px;
     height: 60px;
     width: 385px;
@@ -31,8 +34,8 @@
 .fade-in span {
     position: relative;
     transition: 0.5s;
-  }
-  
+}
+
 .fade-in span:after {
     content: '\00bb';
     position: absolute;
@@ -40,25 +43,25 @@
     top: 0;
     right: -40px;
     transition: 0.7s;
-  }
+}
 
 .fade-in:hover span {
     padding-right: 25px;
-  }
-  
+}
+
 .fade-in:hover span:after {
     opacity: 1;
     right: -10px;
-  }
+}
 
 /* ----- Splash screen Fade In ----- */
-@keyframes fadeIn{
-    to{
+@keyframes fadeIn {
+    to {
         opacity: 1;
     }
 }
 
-.fade-in{
+.fade-in {
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
     margin-top: 25vh;
@@ -67,12 +70,12 @@
 
 /* ------------------------------------------------------------ */
 /* ----- Buttons container ----- */
-#buttonDiv{
+#buttonDiv {
     text-align: center;
 }
 
 /* ----- Mute Button ----- */
-#muteBut{
+#muteBut {
     top: 3px;
     width: 70px;
     margin-right: 20px;
@@ -80,13 +83,13 @@
 }
 
 /* ----- The reset button ----- */
-#playAgain{
+#playAgain {
     width: 210px;
 }
 
 /* ----- Mute and Reset buttons common ----- */
-.MR{
-    font-size : 1.5em;
+.MR {
+    font-size: 1.5em;
     height: 40px;
     cursor: pointer;
     color: #fff;
@@ -103,7 +106,7 @@
 
 .MR:active {
     background: #0489c7;
-    box-shadow: 0 3px #666;
+    box-shadow: 0 3px #555;
     transform: translateY(5px);
 }
 
@@ -111,11 +114,11 @@
 .MR span {
     position: relative;
     transition: 0.5s;
-  }
+}
 
 .MR span:after {
     content: '(F2)';
-    font-size : 0.6em;
+    font-size: 0.6em;
     /* color: black; */
     font-weight: 750;
     top: 4px;
@@ -123,25 +126,25 @@
     opacity: 0;
     right: -40px;
     transition: 0.5s;
-  }
+}
 
-#playAgain span:after{
+#playAgain span:after {
     content: '(F4)';
 }
 
 .MR:hover span {
     padding-right: 25px;
-  }
-  
+}
+
 .MR:hover span:after {
     opacity: 1;
     right: -3px;
-  }
+}
 
 
 /* ------------------------------------------------------------ */
 /* ----- Parent of the game containers ----- */
-#parent{
+#parent {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -149,7 +152,7 @@
 }
 
 /* ----- Container of texts and input box ----- */
-#first{
+#first {
     width: 35vw;
     margin-top: 13vh;
     margin-left: 15vw;
@@ -157,20 +160,20 @@
 }
 
 /* ----- The texts ----- */
-p{
+p {
     font-size: 2em;
     margin: 15px 0;
 }
 
 /* Hidden word text */
-#hidden{
+#hidden {
     font-weight: bolder;
     font-size: 2.5em;
     /* color: #0489c7; */
 }
 
 /* ----- Your guess text ----- */
-#yourGuess{
+#yourGuess {
     font-size: 2em;
     margin-top: 5px;
     margin-bottom: 14px;
@@ -178,13 +181,13 @@ p{
 }
 
 /* ----- Canvas container ----- */
-#second{
+#second {
     margin-top: 13vh;
     margin-right: 25vw;
     /* margin: auto auto; */
 }
 
-#wrongGuesses{
+#wrongGuesses {
     color: red;
     font-size: 1.7em;
     position: fixed;
@@ -196,7 +199,6 @@ p{
     text-align: left;
 }
 
-#wrong{
+#wrong {
     color: black;
 }
-
